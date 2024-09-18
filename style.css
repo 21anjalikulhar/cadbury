@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* border: 1px solid red; */
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    background-color: #6B3B9F;
+    padding-inline: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img{
+    width: 250px;
+}
+#search{
+    height: 35px;
+    width: 100px;
+    border: 1px solid #d4d6d8 ;
+    color: #d4d6d8;
+    border-radius: 10px;
+    background-color: transparent;
+}
+ul{
+    width: 60%;
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+}
+ul li:hover{
+    color:rgb(251,232,184);
+    font-size: 1.2em;
+}
+.homepage{
+    height: 83%;
+    width: 100%;
+    display: flex;
+    background-color: #6B3B9F;
+}
+.text-part{
+    height: 300px;
+    position: absolute;
+    z-index: 5;
+    top: 250px;
+    left: 250px;
+}
+video{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+.text-part button{
+    height: 40px;
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: #6B3B9F;
+    font-weight: bold;
+    border: none;
+    background: rgb(251,232,184);
+    background: radial-gradient(circle, rgba(251,232,184,1) 0%, rgba(211,171,88,1) 100%);
+}
+.text-part h4{
+    color: white;
+    margin-top: 20px;
+}
+.text-part h1{
+    color:rgb(251,232,184);
+    font-size: 2.5em;
+}
+
+
+/* responsive code */
+@media (max-width:768px) {
+    .nav img{
+        width: 150px;
+    }
+    .nav{
+        padding-inline: 80px;
+    }
+    ul{
+        display: none;
+    }
+    .text-part{
+        height: 300px;
+        position: absolute;
+        z-index: 5;
+        top: 180px;
+        left: 100px;
+    }
+    .text-part h4{
+       font-size: 0.7em;
+       padding-right: 20px;
+    }
+    .text-part h1{
+        color:rgb(251,232,184);
+        font-size: 2em;
+    }
+    .text-part button{
+        height: 35px;
+        width: 150px;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width:480px) {
+    .nav{
+        padding-inline: 30px;
+    }
+    .container{
+        height: auto;
+        background-color: #6B3B9F;
+    }
+    .homepage{
+        height: auto;
+        flex-direction: column;
+    }
+    .text-part{
+        height: 230px;
+        top: 400px;
+        left: 100px;
+    }
+    body{
+        background-color: #6B3B9F;
+    }
+}
